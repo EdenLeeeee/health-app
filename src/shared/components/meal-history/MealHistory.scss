@@ -1,0 +1,18 @@
+@import '../../../assets/variables.scss';
+
+.meal-history-wrapper {
+  .meal-img {
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    position: relative;
+    
+    .meal-text {
+      bottom: 0;
+      width: 120px;
+      position: absolute;
+      color: $white-color;
+      background: $secondary-color;
+      text-align: center;
+    }
+  }
+}

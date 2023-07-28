@@ -15,7 +15,9 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <AppRoutes />
+      <div className="outlet-content">
+        <AppRoutes />
+      </div>
       <Footer />
     </div>
   );

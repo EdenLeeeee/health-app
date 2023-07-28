@@ -11,7 +11,7 @@
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "strict": true,
+    "strict": false,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
     "module": "esnext",
@@ -23,6 +23,15 @@
     "paths": {
       "components": [
         "components/index.tsx"
+      ],
+      "shared": [
+        "shared/index.tsx"
+      ],
+      "interface": [
+        "interface/index.tsx"
+      ],
+      "apis": [
+        "apis/index.tsx"
       ],
     },
   },

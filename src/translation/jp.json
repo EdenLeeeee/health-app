@@ -1,4 +1,20 @@
 {
-    "CONTENT_REACT": "Edit <code>src/App.tsx</code> and save to reload.",
-    "BUTTON_LEARN_REACT": "Learn React"
+  "MENU_RECORD": "自分の記録",
+  "MENU_CHALLENGE": "チャレンジ",
+  "MENU_NOTICE": "お知らせ",
+  "MENU": "メニュー",
+  "FOOTER": {
+    "REGISTRATION": "会員登録",
+    "OPERATING_COMPANY": "運営会社",
+    "TERMS": "利用規約",
+    "PERSONAL_INFO": "個人情報の取扱について",
+    "NOTATION": "特定商取引法に基づく表記",
+    "INQUIRY": "お問い合わせ"
+  },
+  "HOME": {
+    "MORNING": "Morning",
+    "LUNCH": "Lunch",
+    "DINNER": "Dinner",
+    "SNACK": "Snack"
+  }
 }
