@@ -1,0 +1,10 @@
+@import '../../assets/variables.scss';
+
+.header-wrapper {
+  a {
+    text-decoration: none;
+  }
+  .active {
+    color: $active-color;
+  }
+}
