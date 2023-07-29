@@ -1,16 +1,16 @@
-@import '../../assets/variables.scss';
+@import '../../assets/styles/variables.scss';
 
 .home-wrapper {
   min-height: 80vh;
+  padding-bottom: 38px;
 
   .top-home {
   }
 
   .buttons-function {
-    display: flex;
     justify-content: center;
     width: 100%;
-    gap: 50px;
-    padding: 40px;
+    gap: 64px;
+    padding: 24px;
   }
 }

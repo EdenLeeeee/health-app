@@ -1,0 +1,28 @@
+@import '../../../assets/styles/variables.scss';
+
+.recommended-wrapper {
+  background-color: $recommended-background;
+  width: 216px;
+  min-height: 144px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .recommended-type {
+    color: $secondary-color;
+    padding: 0 8px;
+    font-size: 22px;
+    word-break: break-word;
+  }
+
+  .stripe {
+    height: 1px;
+    width: 56px;
+    background-color: $white-color;
+    margin: 10px 0;
+  }
+
+  span {
+    font-size: 18px;
+  }
+}

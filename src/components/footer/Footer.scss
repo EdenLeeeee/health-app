@@ -1,11 +1,10 @@
-@import '../../assets/variables.scss';
+@import '../../assets/styles/variables.scss';
 
 .footer-wrapper {
   height: $footer-height;
-  background-color: $header-footer-background;
+  background-color: $monochromatic-color;
   padding: 0 100px;
   display: flex;
   align-items: center;
   gap: 50px;
-  color: $white-color;
 }

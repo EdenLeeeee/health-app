@@ -15,6 +15,30 @@
     "MORNING": "Morning",
     "LUNCH": "Lunch",
     "DINNER": "Dinner",
-    "SNACK": "Snack"
+    "SNACK": "Snack",
+    "SEE_MORE_RECORDS": "記録をもっと見る"
+  },
+  "COLUMN_PAGE": {
+    "RECOMMENDED_COLUMN_TITLE": "RECOMMENDED COLUMN",
+    "RECOMMENDED_COLUMN_SUBTITLE": "オススメ",
+    "RECOMMENDED_DIET_TITLE": "RECOMMENDED DIET",
+    "RECOMMENDED_DIET_SUBTITLE": "ダイエット",
+    "RECOMMENDED_BEAUTY_TITLE": "RECOMMENDED BEAUTY",
+    "RECOMMENDED_BEAUTY_SUBTITLE": "美容",
+    "RECOMMENDED_HEALTH_TITLE": "RECOMMENDED HEALTH",
+    "RECOMMENDED_HEALTH_SUBTITLE": "健康",
+    "SEE_MORE_COLUMNS": "コラムをもっと見る"
+  },
+  "MY_RECORDS": {
+    "BODY_RECORD_TITLE": "BODY RECORD",
+    "BODY_RECORD_BUTTON": "自分のカラダの記録",
+    "MY_EXERCISE_TITLE": "MY EXERCISE",
+    "MY_EXERCISE_BUTTON": "自分の運動の記録",
+    "MY_DIARY_TITLE": "MY DIARY",
+    "MY_DIARY_BUTTON": "自分の日記",
+    "SEE_MORE_MY_DIARY": "自分の日記をもっと見る",
+    "MY_EXERCISE": {
+      "TITLE": "MY EXERCISE"
+    }
   }
 }

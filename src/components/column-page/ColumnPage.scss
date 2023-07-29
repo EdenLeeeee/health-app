@@ -1,1 +1,12 @@
-@import '../../assets/variables.scss';
+@import '../../assets/styles/variables.scss';
+
+.column-wrapper {
+  min-height: 80vh;
+  padding: 56px 0 38px;
+
+  .recommended-menu {
+    gap: 32px;
+    justify-content: center;
+    margin-bottom: 56px;
+  }
+}

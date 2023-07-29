@@ -1,0 +1,30 @@
+@import '../../assets/styles/variables.scss';
+
+.my-records-wrapper {
+  min-height: 80vh;
+  padding: 56px 0 38px;
+
+  .entry-button-section {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+  }
+
+  .my-exercise-section {
+    margin-top: 56px;
+  }
+
+  .my-diary-section {
+    margin-top: 56px;
+    color: $monochromatic-color;
+
+    .title {
+      font-size: 22px;
+    }
+
+    .my-diary-list {
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+  }
+}

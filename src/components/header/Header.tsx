@@ -12,7 +12,7 @@ function Header() {
     {
       menuName: 'MENU_RECORD',
       icon: iconMemo,
-      url: ''
+      url: '/my-records'
     },
     {
       menuName: 'MENU_CHALLENGE',
@@ -28,7 +28,9 @@ function Header() {
   return (
     <div className="header-wrapper d-flex">
       <div className="logo col-sm-6">
-        <img src={logo} alt="Logo" />
+        <NavLink to="/">
+          <img src={logo} alt="Logo" />
+        </NavLink>
       </div>
       <div className="menu-item col-sm-6">
         {arrayNav.map((menu, index) => {

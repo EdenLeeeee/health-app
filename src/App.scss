@@ -1,3 +1,35 @@
+@import './assets/styles/variables.scss';
+
 .outlet-content {
-    padding: 0 100px;
+  width: $body-width-content;
+  margin: 0 auto;
+}
+
+.button-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 28px 0;
+
+  .btn {
+    font-size: 18px;
+    width: 296px;
+    height: 56px;
+    background: linear-gradient(
+      32.95deg,
+      $secondary-color 8.75%,
+      $primary-color 86.64%
+    );
+  }
+}
+.meal-history {
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: $body-width-content;
+}
+.text-ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }

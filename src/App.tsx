@@ -1,12 +1,13 @@
 import ColumnPage from 'components/column-page/ColumnPage';
 import { useRoutes } from 'react-router-dom';
 import './App.scss';
-import { Footer, Header, Home } from 'components';
+import { Footer, Header, Home, MyRecords } from 'components';
 
 function AppRoutes() {
   const routes = useRoutes([
     { path: '/', element: <Home /> },
-    { path: '/column-page', element: <ColumnPage /> }
+    { path: '/column-page', element: <ColumnPage /> },
+    { path: '/my-records', element: <MyRecords /> }
   ]);
   return routes;
 }

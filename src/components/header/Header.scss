@@ -1,10 +1,10 @@
-@import '../../assets/variables.scss';
+@import '../../assets/styles/variables.scss';
 
 .header-wrapper {
   height: $header-height;
-  background-color: $header-footer-background;
-  padding: 0 100px;
-
+  background-color: $monochromatic-color;
+  padding: 0px 147px 0 138px;
+  
   .logo {
   }
 

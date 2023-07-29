@@ -1,0 +1,43 @@
+@import '../../../assets/styles/variables.scss';
+
+.entry-button-wrapper {
+  height: 288px;
+  width: 288px;
+  background-color: $secondary-color;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .entry-img {
+    background-repeat: no-repeat, repeat;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    filter: grayscale(100%);
+  }
+
+  .entry-content {
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+
+    .title {
+      font-size: 25px;
+      color: $secondary-color;
+    }
+
+    .btn {
+      background-color: $primary-color;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0;
+      font-size: 14px;
+      font-weight: 300;
+      width: 160px;
+      height: 24px;
+    }
+  }
+}

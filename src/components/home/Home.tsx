@@ -6,7 +6,7 @@ import { FunctionButton, MealHistory } from 'shared';
 import { t } from 'i18next';
 import { getMealHistory } from 'apis';
 import { useEffect, useState } from 'react';
-import { IDummyData, IResponseAPI } from 'intefaces';
+import { IDummyMealHistory, IResponseAPI } from 'interfaces';
 
 function Home() {
   const arrayFunctionButton = [
@@ -27,16 +27,15 @@ function Home() {
       text: 'HOME.SNACK'
     }
   ];
-  const [mealHistory, setMealHistory] = useState([]);
+  const [mealHistory, setMealHistory] = useState([] as IDummyMealHistory[]);
+  const height: number = 234;
+  const width: number = 234;
 
   useEffect(() => {
-    getMealHistory()
-      .then((res: IResponseAPI<IDummyData[]>) => {
-        setMealHistory(res.data);
-        console.log(mealHistory)
-      });
-  }, []); 
-
+    getMealHistory().then((res: IResponseAPI<IDummyMealHistory[]>) => {
+      setMealHistory(res.data);
+    });
+  }, []);
 
   return (
     <div className="home-wrapper">
@@ -47,14 +46,29 @@ function Home() {
         <div className="body-weight" />
       </div>
 
-      <div className="buttons-function">
+      <div className="buttons-function d-flex">
         {arrayFunctionButton.map((item, index) =>
           <FunctionButton key={index} icon={item.icon} text={t(item.text)} />
         )}
       </div>
 
-      <div className="meal-history">
-        {/* <MealHistory /> */}
+      <div className="meal-history d-flex">
+        {mealHistory.map(item =>
+          <MealHistory
+            key={item.id}
+            height={height}
+            width={width}
+            backgroundImage={item.img}
+            backgroundSize="auto 100%"
+            imgText={item.date}
+          />
+        )}
+      </div>
+
+      <div className="button-style d-flex">
+        <button type="button" className="btn">
+          {t('HOME.SEE_MORE_RECORDS')}
+        </button>
       </div>
     </div>
   );
