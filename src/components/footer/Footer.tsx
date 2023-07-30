@@ -11,12 +11,14 @@ function Footer() {
     'FOOTER.INQUIRY'
   ];
   return (
-    <div className="footer-wrapper">
-      {arrayFooter.map((footer, index) =>
-        <span key={index}>
-          {t(footer)}
-        </span>
-      )}
+    <div className="footer-wrapper d-flex">
+      <div className="main-container d-flex">
+        {arrayFooter.map((footer, index) =>
+          <span key={index}>
+            {t(footer)}
+          </span>
+        )}
+      </div>
     </div>
   );
 }

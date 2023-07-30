@@ -6,6 +6,7 @@ import './i18n/i18n';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
+import './fonts/Inter/static/Inter-Regular.ttf';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

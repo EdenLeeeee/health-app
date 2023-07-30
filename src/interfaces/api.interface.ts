@@ -21,3 +21,15 @@ export interface IDummyMyDiary {
   date: string;
   content: string;
 }
+
+export interface IDummyMyExercise {
+  date: string;
+  exerciseData: IExercise[];
+}
+
+export interface IExercise {
+  id?: number;
+  action: string;
+  calo: number;
+  minutes: number;
+}

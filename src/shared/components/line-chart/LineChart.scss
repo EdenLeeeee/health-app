@@ -1,0 +1,54 @@
+@import '../../../assets/styles/variables.scss';
+
+.line-chart-wrapper {
+  background-color: $monochromatic-color;
+  padding: 24px;
+
+  .header {
+    font-weight: 400;
+
+    .title {
+      font-size: 15px;
+      line-height: 18px;
+      letter-spacing: 0.15000000596046448px;
+      text-align: left;
+      word-wrap: break-word;
+      width: 90px;
+    }
+
+    .date {
+      font-size: 22px;
+      line-height: 27px;
+      letter-spacing: 0.10999999940395355px;
+      text-align: left;
+    }
+
+    margin-bottom: 2px;
+  }
+
+  .button-chart {
+    margin-top: 8px;
+    font-family: $secondary-font;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0.07500000298023224px;
+    gap: 16px;
+
+    .btn {
+      width: 56px;
+      height: 24px;
+      border-radius: 50px;
+      background-color: $white-color;
+      color: $primary-300;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      &:hover,
+      &.active {
+        color: $white-color;
+        background-color: $primary-300;
+      }
+    }
+  }
+}

@@ -3,7 +3,7 @@
 .entry-button-wrapper {
   height: 288px;
   width: 288px;
-  background-color: $secondary-color;
+  background-color: $primary-300;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -25,10 +25,15 @@
 
     .title {
       font-size: 25px;
-      color: $secondary-color;
+      color: $primary-300;
     }
 
     .btn {
+      font-family: $secondary-font;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 20px;
+      letter-spacing: 0px;
       background-color: $primary-color;
       display: flex;
       align-items: center;

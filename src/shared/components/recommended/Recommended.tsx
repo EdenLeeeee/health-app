@@ -13,7 +13,7 @@ function Recommended(props: IRecommended) {
         {t(props.titleRecommend)}
       </span>
       <div className="stripe" />
-      <span>
+      <span className="sub-title">
         {t(props.subTitle)}
       </span>
     </div>

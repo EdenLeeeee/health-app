@@ -25,17 +25,23 @@ function ColumnPage() {
     }
   ];
   const [columnList, setColumnList] = useState([] as IDummyColumnList[]);
+  const [isLoadMore, setIsLoadMore] = useState(true);
   const height: number = 144;
   const width: number = 234;
 
   useEffect(() => {
-    getColumnList().then((res: IResponseAPI<IDummyColumnList[]>) => {
-      setColumnList(res.data);
-    });
-  }, []);
+    if (isLoadMore) {
+      getColumnList().then((res: IResponseAPI<IDummyColumnList[]>) => {
+        setColumnList([...columnList, ...(res?.data || [])]);
+        setIsLoadMore(false);
+      }).catch(() => setIsLoadMore(false));
+    }
+
+    return () => setIsLoadMore(false);
+  }, [isLoadMore,columnList]);
 
   return (
-    <div className="column-wrapper">
+    <div className="column-wrapper main-container">
       <div className="recommended-menu d-flex">
         {recommendedArray.map((item, index) =>
           <Recommended
@@ -63,7 +69,7 @@ function ColumnPage() {
       </div>
 
       <div className="button-style d-flex">
-        <button type="button" className="btn">
+        <button onClick={() => setIsLoadMore(true)} type="button" className="btn">
           {t('COLUMN_PAGE.SEE_MORE_COLUMNS')}
         </button>
       </div>

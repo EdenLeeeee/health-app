@@ -3,6 +3,16 @@
   "MENU_CHALLENGE": "チャレンジ",
   "MENU_NOTICE": "お知らせ",
   "MENU": "メニュー",
+  "HEADER": {
+    "SUB_MENU": {
+      "MY_RECORD": "自分の記録",
+      "WEIGHT_CHART": "体重グラフ",
+      "GOAL": "目標",
+      "SELECTED_COURSE": "選択中のコース",
+      "COLUMN_LIST": "コラム一覧",
+      "SETTINGS": "設定"
+    }
+  },
   "FOOTER": {
     "REGISTRATION": "会員登録",
     "OPERATING_COMPANY": "運営会社",
@@ -39,6 +49,12 @@
     "SEE_MORE_MY_DIARY": "自分の日記をもっと見る",
     "MY_EXERCISE": {
       "TITLE": "MY EXERCISE"
+    },
+    "MY_BODY": {
+      "SUN": "日",
+      "WEEK": "週",
+      "MONTH": "月",
+      "YEAR": "年"
     }
   }
 }

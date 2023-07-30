@@ -1,11 +1,15 @@
 @import './assets/styles/variables.scss';
 
-.outlet-content {
+.main-container {
   width: $body-width-content;
   margin: 0 auto;
 }
 
+.outlet-content {
+  overflow: auto;
+}
 .button-style {
+  font-family: $secondary-font;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +21,7 @@
     height: 56px;
     background: linear-gradient(
       32.95deg,
-      $secondary-color 8.75%,
+      $primary-300 8.75%,
       $primary-color 86.64%
     );
   }
@@ -32,4 +36,15 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: $gray-stripe;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: $primary-300;
+  border-radius: 10px;
 }

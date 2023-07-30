@@ -3,23 +3,62 @@
 .header-wrapper {
   height: $header-height;
   background-color: $monochromatic-color;
-  padding: 0px 147px 0 138px;
-  
-  .logo {
-  }
+  font-family: $secondary-font;
 
   .menu-item {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     gap: 30px;
+    white-space: nowrap;
   }
 
   a {
     color: $white-color;
     text-decoration: none;
-    &.active, &:hover {
+    display: flex;
+    align-items: center;
+
+    &.active,
+    &:hover {
       color: $primary-color;
+    }
+
+    .badge {
+      min-width: 16px;
+      height: 16px;
+      background-color: $badge-color;
+      font-size: 10px;
+      font-family: $primary-font;
+      top: 8px;
+
+      span {
+        left: -1px;
+      }
+    }
+  }
+
+  .dropdown {
+    img {
+      cursor: pointer;
+    }
+
+    .dropdown-menu {
+      padding: 0;
+      width: 280px;
+      right: 0;
+
+      li {
+        height: 72px;
+        background: $gray-stripe;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        align-items: center;
+
+        a {
+          background: unset;
+          padding-left: 32px;
+        }
+      }
     }
   }
 }

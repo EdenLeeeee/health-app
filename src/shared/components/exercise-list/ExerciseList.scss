@@ -10,7 +10,6 @@
   padding: 16px 24px;
 
   .header {
-    font-family: Inter;
     font-weight: 400;
     gap: 25px;
 
@@ -25,7 +24,6 @@
     }
 
     .date {
-      font-family: Inter;
       font-size: 22px;
       line-height: 27px;
       letter-spacing: 0.10999999940395355px;
@@ -38,7 +36,6 @@
     overflow: auto;
 
     .action-wrapper {
-      font-family: Inter;
       font-weight: 400;
       font-size: 15px;
       text-align: left;
@@ -60,23 +57,22 @@
           }
 
           .action {
-            font-family: Hiragino Kaku Gothic Pro;
+            font-family: $secondary-font;
             font-weight: 300;
             line-height: 22px;
           }
           .calo {
             line-height: 18px;
-            color: $secondary-color;
+            color: $primary-300;
           }
         }
 
         .minutes {
-          font-family: Inter;
           font-size: 18px;
           line-height: 22px;
           letter-spacing: 0.09000000357627869px;
           text-align: right;
-          color: $secondary-color;
+          color: $primary-300;
         }
       }
 
